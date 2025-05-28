@@ -4,41 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boost your productivity with our premium AI tools and ChatGPT prompts. Get access to 100+ ready-to-use prompts and expert AI tools guide.">
-    <meta name="keywords" content="AI tools, ChatGPT prompts, AI productivity, business AI, digital products, AI guide">
-    <meta name="author" content="M Yousuf">
+    <meta name="description" content="AI Business System - Everything you need to build and scale your AI-powered business. Get started with our comprehensive framework today.">
+    <meta name="keywords" content="AI business, artificial intelligence, business system, AI tools, business framework">
+    <meta name="author" content="AI Business System">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="AI Business System - Build Your AI-Powered Business">
+    <meta property="og:description" content="Everything you need to build and scale your AI-powered business. Get started with our comprehensive framework today.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yousuf816.github.io/ai-tools-blog/">
-    <meta property="og:title" content="AI Tools Expert - Best AI Tools & Resources">
-    <meta property="og:description" content="Boost your productivity with our premium AI tools and ChatGPT prompts. Get access to 100+ ready-to-use prompts and expert AI tools guide.">
-    <meta property="og:image" content="images/hero-illustration.svg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yousuf816.github.io/ai-tools-blog/">
-    <meta property="twitter:title" content="AI Tools Expert - Best AI Tools & Resources">
-    <meta property="twitter:description" content="Boost your productivity with our premium AI tools and ChatGPT prompts. Get access to 100+ ready-to-use prompts and expert AI tools guide.">
-    <meta property="twitter:image" content="images/hero-illustration.svg">
-
-    <title>AI Business System - Transform Your Business with AI</title>
+    <meta property="og:url" content="https://aibusinesssystem.com">
+    <meta property="og:image" content="https://aibusinesssystem.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Business System - Build Your AI-Powered Business">
+    <meta name="twitter:description" content="Everything you need to build and scale your AI-powered business. Get started with our comprehensive framework today.">
+    <meta name="twitter:image" content="https://aibusinesssystem.com/images/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <title>AI Business System - Build Your AI-Powered Business</title>
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS4S0R02VX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        gtag('config', 'G-JS4S0R02VX');
     </script>
 </head>
 <body>
     <header class="header">
+        <div class="progress-bar" id="progressBar"></div>
         <nav class="nav-container">
             <div class="logo">AI Business System</div>
             <div class="nav-links">
@@ -47,98 +56,136 @@
                 <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
             </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/" class="active">Home</a>
+            <a href="/products.html">Products</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <span class="hero-badge">🚀 Transform Your Business with AI</span>
-                <h1>Complete AI Business System</h1>
-                <p class="hero-subtitle">Everything you need to build and scale your AI-powered business</p>
+            <div class="hero-content" data-aos="fade-up">
+                <span class="hero-badge">🔥 Limited Time Offer - 50% OFF</span>
+                <h1>Transform Your Business with AI</h1>
+                <p class="hero-subtitle">Join 10,000+ entrepreneurs who've automated their business with AI. Start making money in the next 24 hours.</p>
+                <div class="cta-buttons">
+                    <a href="https://yousufmrm.gumroad.com/l/hanol" class="btn btn-primary pulse">Get Started Now - $997</a>
+                    <p class="guarantee">✨ 30-Day Money-Back Guarantee</p>
+                </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-number">300%</span>
-                        <span class="stat-label">Revenue Increase</span>
+                        <span class="stat-number">$5,000+</span>
+                        <span class="stat-label">Average Monthly Revenue</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Ready-to-Use Templates</span>
+                        <span class="stat-number">24hrs</span>
+                        <span class="stat-label">Time to First Sale</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Community Support</span>
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Success Rate</span>
                     </div>
                 </div>
-                <div class="cta-buttons">
-                    <a href="https://yousufmrm.gumroad.com/l/hanol" class="btn btn-primary">Get Started Now - $997</a>
+                <div class="trust-badges">
+                    <img src="images/trust-badge-1.png" alt="Trust Badge 1">
+                    <img src="images/trust-badge-2.png" alt="Trust Badge 2">
+                    <img src="images/trust-badge-3.png" alt="Trust Badge 3">
                 </div>
-                <p class="guarantee">✨ 30-Day Money-Back Guarantee</p>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-illustration.svg" alt="AI Business System">
             </div>
         </section>
 
         <section class="features">
-            <h2>What's Included in Your AI Business System</h2>
+            <h2 data-aos="fade-up">What's Included in Your AI Business System</h2>
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">📊</div>
                     <h3>Business Model Canvas</h3>
                     <p>Complete framework for your AI business</p>
+                    <ul class="feature-list">
+                        <li>✅ Revenue Streams</li>
+                        <li>✅ Cost Structure</li>
+                        <li>✅ Value Propositions</li>
+                    </ul>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">🛠️</div>
                     <h3>AI Tools Stack</h3>
                     <p>Essential tools and integration framework</p>
+                    <ul class="feature-list">
+                        <li>✅ AI Content Creation</li>
+                        <li>✅ Automation Tools</li>
+                        <li>✅ Analytics Dashboard</li>
+                    </ul>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">👥</div>
                     <h3>Client Acquisition</h3>
                     <p>Complete system for getting clients</p>
+                    <ul class="feature-list">
+                        <li>✅ Lead Generation</li>
+                        <li>✅ Sales Funnel</li>
+                        <li>✅ Client Onboarding</li>
+                    </ul>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon">📈</div>
                     <h3>Revenue Optimization</h3>
                     <p>Maximize your business revenue</p>
+                    <ul class="feature-list">
+                        <li>✅ Pricing Strategies</li>
+                        <li>✅ Upsell Framework</li>
+                        <li>✅ ROI Calculator</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="benefits">
-            <h2>Why Choose AI Business System?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Proven Framework</h3>
-                    <p>Successfully implemented in businesses generating 6-7 figures</p>
+        <section class="testimonials">
+            <h2 data-aos="fade-up">Success Stories</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Started with zero experience. Now making $15,000/month with AI services. The system is worth every penny!"</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="Sarah K.">
+                        <div>
+                            <strong>Sarah K.</strong>
+                            <span>AI Agency Owner</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💰</div>
-                    <h3>Complete Solution</h3>
-                    <p>Everything you need to build and scale your AI business</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Expert Support</h3>
-                    <p>Get help when you need it from our community and support team</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔄</div>
-                    <h3>Community Access</h3>
-                    <p>Learn from and network with other AI entrepreneurs</p>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"The ROI was incredible. Got my first client within 24 hours and scaled to $50,000/month in 3 months."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="Michael R.">
+                        <div>
+                            <strong>Michael R.</strong>
+                            <span>Digital Agency Founder</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="pricing-section">
-            <h2>Get Started Today</h2>
+            <h2 data-aos="fade-up">Get Started Today</h2>
             <div class="pricing-grid">
-                <div class="pricing-card featured">
+                <div class="pricing-card featured" data-aos="zoom-in">
                     <div class="pricing-badge">Best Value</div>
                     <h3>AI Business System</h3>
-                    <div class="price">$997</div>
+                    <div class="price-container">
+                        <span class="original-price">$1,997</span>
+                        <span class="price">$997</span>
+                    </div>
                     <ul class="pricing-features">
                         <li>✅ Complete Business Framework</li>
                         <li>✅ Implementation Guide</li>
@@ -148,21 +195,45 @@
                         <li>✅ Community Access</li>
                         <li>✅ Lifetime Updates</li>
                     </ul>
-                    <a href="https://yousufmrm.gumroad.com/l/hanol" class="btn btn-primary">Get Started Now</a>
+                    <div class="bonus-offer">
+                        <h4>🎁 Special Bonus Offer</h4>
+                        <p>Get our "AI Client Acquisition Guide" (Value: $297) FREE when you order today!</p>
+                    </div>
+                    <a href="https://yousufmrm.gumroad.com/l/hanol" class="btn btn-primary pulse">Get Started Now</a>
                     <p class="pricing-note">✨ 30-Day Money-Back Guarantee</p>
+                    <p class="stock-warning">⚠️ Only 5 spots left at this price!</p>
                 </div>
             </div>
         </section>
 
-        <section class="guarantee-section">
-            <h2>30-Day Money-Back Guarantee</h2>
-            <p>We're confident you'll love the AI Business System. If you're not satisfied, we'll refund your investment - no questions asked.</p>
-        </section>
-
-        <section class="cta-section">
-            <h2>Ready to Transform Your Business?</h2>
-            <p>Get started with the AI Business System today</p>
-            <a href="https://yousufmrm.gumroad.com/l/hanol" class="btn btn-primary">Get Started Now - $997</a>
+        <section class="lead-magnet">
+            <div class="lead-content" data-aos="fade-up">
+                <h2>Get Your Free AI Business Starter Kit</h2>
+                <p class="lead-subtitle">Start making money with AI in the next 7 days</p>
+                <div class="lead-features">
+                    <div class="lead-feature">
+                        <span class="feature-icon">📊</span>
+                        <p>AI Business Model Template</p>
+                    </div>
+                    <div class="lead-feature">
+                        <span class="feature-icon">💰</span>
+                        <p>Pricing Strategy Guide</p>
+                    </div>
+                    <div class="lead-feature">
+                        <span class="feature-icon">🎯</span>
+                        <p>Client Acquisition Scripts</p>
+                    </div>
+                    <div class="lead-feature">
+                        <span class="feature-icon">📈</span>
+                        <p>7-Day Action Plan</p>
+                    </div>
+                </div>
+                <form class="lead-form" id="leadForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Get Free Kit</button>
+                </form>
+                <p class="lead-note">✨ Join 5,000+ entrepreneurs who've already downloaded the kit</p>
+            </div>
         </section>
     </main>
 
@@ -172,160 +243,125 @@
                 <h3>Contact</h3>
                 <p>Email: support@aibusinesssystem.com</p>
             </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">Discord</a>
-                </div>
-            </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2024 AI Business System. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="/privacy-policy.html">Privacy Policy</a>
+                <a href="/terms-of-service.html">Terms of Service</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Chat Widget -->
-    <div class="chat-widget" id="chatWidget">
-        <button class="chat-toggle" onclick="toggleChat()">
-            <span class="chat-icon">💬</span>
-            <span class="chat-label">Need Help?</span>
-        </button>
-        <div class="chat-container" id="chatContainer">
-            <div class="chat-header">
-                <h3>AI Assistant</h3>
-                <button class="close-chat" onclick="toggleChat()">×</button>
-            </div>
-            <div class="chat-messages" id="chatMessages">
-                <div class="message bot">
-                    <p>👋 Hi! I'm your AI assistant. How can I help you today?</p>
-                </div>
-            </div>
-            <div class="chat-input">
-                <input type="text" id="userInput" placeholder="Type your question..." onkeypress="handleKeyPress(event)">
-                <button onclick="sendMessage()">Send</button>
-            </div>
-        </div>
-    </div>
-
+    <!-- Add EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Add AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Set the date we're counting down to (7 days from now)
-        const countDownDate = new Date();
-        countDownDate.setDate(countDownDate.getDate() + 7);
-
-        // Update the countdown every 1 second
-        const x = setInterval(function() {
-            // Get current date and time
-            const now = new Date().getTime();
-            
-            // Find the distance between now and the countdown date
-            const distance = countDownDate - now;
-            
-            // Time calculations for days, hours, minutes and seconds
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            // Display the result
-            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-            
-            // If the countdown is finished, display expired message
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("days").innerHTML = "00";
-                document.getElementById("hours").innerHTML = "00";
-                document.getElementById("minutes").innerHTML = "00";
-                document.getElementById("seconds").innerHTML = "00";
-            }
-        }, 1000);
-
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                const isActive = faqItem.classList.contains('active');
-                
-                // Close all FAQ items
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                });
-                
-                // If the clicked item wasn't active, open it
-                if (!isActive) {
-                    faqItem.classList.add('active');
-                }
-            });
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
         });
 
-        // Chat Widget Functions
-        function toggleChat() {
-            const container = document.getElementById('chatContainer');
-            container.classList.toggle('active');
-        }
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("OuaMPJL85bVKTF6nL");
+        })();
 
-        function handleKeyPress(event) {
-            if (event.key === 'Enter') {
-                sendMessage();
-            }
-        }
-
-        function sendMessage() {
-            const input = document.getElementById('userInput');
-            const message = input.value.trim();
+        // Email Marketing Integration
+        function handleLeadForm(event) {
+            event.preventDefault();
+            const email = document.getElementById('leadEmail').value;
             
-            if (message) {
-                addMessage(message, 'user');
-                input.value = '';
+            // Send welcome email using EmailJS
+            emailjs.send("service_qz6vmks", "template_3xzkevh", {
+                to_email: email,
+                to_name: email.split('@')[0],
+                from_name: "AI Business System",
+                message: "Welcome to AI Business System! Here's your free starter kit..."
+            })
+            .then(function(response) {
+                console.log("SUCCESS", response);
+                document.getElementById('leadFormMessage').innerHTML = 
+                    '🎉 Check your email for your free AI Business Starter Kit!';
                 
-                // Simulate AI response
-                setTimeout(() => {
-                    const response = getAIResponse(message);
-                    addMessage(response, 'bot');
-                }, 1000);
+                // Schedule follow-up emails
+                triggerWelcomeSequence(email);
+            })
+            .catch(function(error) {
+                console.error("FAILED", error);
+                document.getElementById('leadFormMessage').innerHTML = 
+                    'Oops! Something went wrong. Please try again.';
+            });
+        }
+
+        // Welcome Email Sequence
+        function triggerWelcomeSequence(email) {
+            // Day 1: Welcome & Starter Kit
+            setTimeout(() => {
+                emailjs.send("service_qz6vmks", "template_3xzkevh", {
+                    to_email: email,
+                    to_name: email.split('@')[0],
+                    from_name: "AI Business System",
+                    message: "Welcome to AI Business System! Here's your starter kit..."
+                });
+            }, 1000);
+
+            // Day 2: Basic Tips
+            setTimeout(() => {
+                emailjs.send("service_qz6vmks", "template_sxplyfb", {
+                    to_email: email,
+                    to_name: email.split('@')[0],
+                    from_name: "AI Business System",
+                    message: "Here are some basic tips to get started..."
+                });
+            }, 86400000);
+
+            // Day 3: Case Study
+            setTimeout(() => {
+                emailjs.send("service_qz6vmks", "template_3xzkevh", {
+                    to_email: email,
+                    to_name: email.split('@')[0],
+                    from_name: "AI Business System",
+                    message: "Check out this success story..."
+                });
+            }, 172800000);
+
+            // Day 5: Special Offer
+            setTimeout(() => {
+                emailjs.send("service_qz6vmks", "template_sxplyfb", {
+                    to_email: email,
+                    to_name: email.split('@')[0],
+                    from_name: "AI Business System",
+                    message: "Special offer just for you..."
+                });
+            }, 432000000);
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        // Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
             }
-        }
-
-        function addMessage(text, sender) {
-            const messagesDiv = document.getElementById('chatMessages');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${sender}`;
-            messageDiv.innerHTML = `<p>${text}</p>`;
-            messagesDiv.appendChild(messageDiv);
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-
-        function getAIResponse(message) {
-            // Common questions and answers
-            const qa = {
-                'price': 'Our AI Mastermind Bundle is currently $51 (45% off the regular price of $93). Individual products range from $26 to $99.',
-                'refund': 'We offer a 30-day money-back guarantee. If you\'re not satisfied, simply contact us for a full refund.',
-                'support': 'Bundle customers get priority support through email. We typically respond within 24 hours.',
-                'technical': 'No technical skills required! All our products come with step-by-step guides and ready-to-use templates.',
-                'updates': 'Yes! All products come with lifetime updates. We regularly update our guides as AI technology evolves.',
-                'bundle': 'The AI Mastermind Bundle includes all our premium products: AI Side Hustle Guide, AI Business Automation Guide, AI Copywriting Mastery, and AI Business Templates Pack.',
-                'payment': 'We accept all major credit cards and PayPal. All payments are secure and encrypted.',
-                'delivery': 'You\'ll get instant access to all digital products after purchase. No waiting!',
-                'contact': 'You can reach us at support@aitoolsexpert.com. We typically respond within 24 hours.'
-            };
-
-            // Convert message to lowercase for better matching
-            const lowerMessage = message.toLowerCase();
-
-            // Check for keywords in the message
-            for (const [key, value] of Object.entries(qa)) {
-                if (lowerMessage.includes(key)) {
-                    return value;
-                }
-            }
-
-            // Default response if no specific match
-            return "I'm not sure about that specific question. Please email us at support@aitoolsexpert.com for a detailed response.";
-        }
+        });
     </script>
 </body>
 </html> 
